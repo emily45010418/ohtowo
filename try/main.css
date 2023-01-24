@@ -1,0 +1,57 @@
+body {
+  background-color: rgb(202, 0, 0);
+}
+img {
+  width: 100%;
+}
+div {
+  display: none;
+}
+div:target {
+  display: block;
+}
+.buttons {
+  width: 50%;
+  margin-left: 30%;
+  display: block;
+  text-align: center;
+
+  animation-name: button;
+  animation-duration: 3.5s;
+  animation-delay: 0s;
+}
+#img1 {
+  animation-name: pic;
+  animation-duration: 5s;
+  animation-delay: 0s;
+  animation-timing-function: ease-out;
+  /* animation-iteration-count: infinite; */
+
+  /*其他CSS屬性省略*/
+}
+@keyframes pic {
+  0% {
+    transform: translate(0%, -50%);
+  }
+
+  25% {
+    transform: translate(0%, -50%);
+  }
+  60% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes button {
+  0% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
